@@ -26,12 +26,14 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Host
+      - name: Prep
         run: |
           sudo apt update
           sudo apt install -y python3 rar
           sudo pip3 install django
           wget -qO- ipinfo.io/ip
+      - name: host    
+        run: |   
           cd mysite
           sudo python3 manage.py runserver
 
