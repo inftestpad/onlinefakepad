@@ -30,7 +30,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y python3 rar
-          pip3 install django
+          sudo pip3 install django
           django-admin startproject mysite
           rar -r a archive.rar mysite
       - name: Upload
