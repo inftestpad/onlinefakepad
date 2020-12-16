@@ -33,5 +33,5 @@ jobs:
           sudo pip3 install django
           wget -qO- ipinfo.io/ip
           cd mysite
-          python3 manage.py runserver
+          sudo python3 manage.py runserver
 
