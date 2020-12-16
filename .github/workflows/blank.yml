@@ -32,7 +32,11 @@ jobs:
           sudo apt install -y python3 rar
           sudo pip3 install django
           django-admin startproject mysite
+          ls mysite
+          echo "ls"
+          ls
           rar -r a archive.rar mysite
+          ls
       - name: Upload
         uses: actions/upload-artifact@v2.2.1
         with:
