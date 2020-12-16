@@ -32,6 +32,5 @@ jobs:
           sudo apt install -y python3 rar
           sudo pip3 install django
           wget -qO- ipinfo.io/ip
-          django-admin startproject mysite
           python manage.py runserver
 
