@@ -37,6 +37,7 @@ jobs:
           ls
           rar -r a archive.rar mysite
           ls
+          pwd
       - name: Upload
         uses: actions/upload-artifact@v2.2.1
         with:
